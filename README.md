@@ -118,8 +118,8 @@ Add below to `/etc/docker/daemon.json` file. You can use vi/vim/nano/whatever su
 }
 ```
 
-Configure passwordless execution of dockerd and service
-Run `sudo visudo` and add following entries at the end of file
+Configure passwordless execution of dockerd service
+Run `sudo visudo` and add following entry at the end of file
 ```
 %docker ALL=(ALL)  NOPASSWD: /usr/bin/dockerd
 ```

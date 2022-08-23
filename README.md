@@ -1,4 +1,4 @@
-# wsl-docker-setup
+# WSL docker setup - Ubuntu
 
 Set-up docker engine within WSL Ubuntu instance:
 
@@ -78,6 +78,8 @@ sudo -b dockerd > /dev/null 2>&1
 ```
 
 ----
+# Shared docker daemon setup
+
 Below steps are optional but having ability to manage docker from all WSL distros you use, is quite convenient.\
 First of all we need to ensure that group ID for docker group will be the same across all WSL distributions.\
 Below steps are applied only to machine, which is going to be master running docker service.\
@@ -158,6 +160,7 @@ If everything is configured correctly, you can close and open new WSL window.\
 Docker should be up and running. 
 
 ----
+# Validation
 
 In order to validate if docker is configured properly run below command :
 
@@ -197,6 +200,8 @@ For more examples and ideas, visit:
 ```
 
 ----
+# Optional WSL setup - connecting to shared socket
+
 This part is optional if you chose to use other WSL distribution beside Ubuntu.
 In short what you need to do is install docker and set DOCKER_HOST variable to point to shared socket.
 Below example is base on `Debian GNU/Linux 9.13 (stretch)` :

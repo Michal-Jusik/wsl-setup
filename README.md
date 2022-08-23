@@ -2,9 +2,15 @@
 
 Set-up docker engine within WSL Ubuntu instance:
 
-First of all check if your WSL isntance is version 2 \
+First of all check if your WSL instance is version 2 \
 If not, update to WSL version 2 first
+In order to check current status run
 
+```PowerShell
+wsl --status
+```
+
+If you want to change, run below.
 ```PowerShell
  wsl --set-default-version 2
 ```

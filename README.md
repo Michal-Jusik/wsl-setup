@@ -225,3 +225,5 @@ export DOCKER_HOST="unix:///mnt/wsl/shared-docker/docker.sock"
 ```
 
 > In order to persist DOCKER_HOST, place it in .bashrc or .profile
+> In order to have nice prompt also add below line to .bashrc
+> . ~/set_PS1.sh
